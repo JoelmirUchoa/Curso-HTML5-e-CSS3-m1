@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1>
+    <p>Site com imagens de tamanho diferente</p>
+    <picture>
+        <!--O 50px a mais para tirar a barra de rolagem-->
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <!--Tem que ser acima em ordem-->
+        <img src="img/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>reproduzindo Áudios</h1>
+    <p>Vamos reproduzir audio em HTML5</p>
+    <audio src="midia/summer somewhere in cuba - cumbia deli.mp3" controls ></audio>
+    <!-- Para inicia autonatico 'autoplay' -->
+</body>
+</html>
